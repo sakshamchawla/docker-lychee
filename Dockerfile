@@ -42,7 +42,7 @@ RUN \
     | awk '/tag_name/{print $4;exit}' FS='[""]'); \
   fi && \
   mkdir -p /app/www && \
-  git clone --recurse-submodules https://github.com/LycheeOrg/Lychee.git /app/www && \
+  git clone --recurse-submodules https://github.com/sakshamchawla/Lychee.git /app/www && \
   cd /app/www && \
   git checkout "${LYCHEE_VERSION}" && \
   echo "**** install composer dependencies ****" && \
